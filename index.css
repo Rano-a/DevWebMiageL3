@@ -1,0 +1,197 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+}
+
+h4 {
+    color: green;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.premierp {
+    color: purple;
+}
+
+.deuxiemep {
+    color: orange;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.premierli {
+    color: brown;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: start;
+}
+
+.deuxiemeli {
+    color: teal;
+    text-align: center;
+}
+
+.troisiemeli {
+    color: magenta;
+    text-align: end;
+}
+
+.quatriemeli {
+    color: navy;
+}
+
+.cinquiemeli {
+    color: olive;
+}
+
+.divmaman {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.div1 {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.div2 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.div3 {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.divmaman2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div21 {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-self: start;
+}
+
+.div22 {
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.div23 {
+    background-color: grey;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-self: end;
+}
+
+.divspacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divspacebetween div {
+    background-color: sandybrown;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.divspacebetween div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.divcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.divcenter div {
+    background-color:deepskyblue;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.divcenter div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.divspaceevenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divspaceevenly div {
+    background-color:mediumaquamarine;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.divspaceevenly div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.divspacearound {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divspacearound div {
+    background-color: lightcoral;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}

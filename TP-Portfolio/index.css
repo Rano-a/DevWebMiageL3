@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: white;
+}
+
+.navbardroite {
+    display: flex;
+    gap: 20px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section1gaucheh1 {
+    color: white;
+}
+
+.section1gauchep {
+    color: gray;
+}
+
+.btns button:first-child {
+    background-color: #27AE60;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btns button:last-child {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section2h1title {
+    color: white;
+}
+
+.section2p {
+    text-align: center;
+    color: white;
+    padding: 0 20%;
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.reseauenfant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle1 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+    width: 10px;
+    height: 10px;
+    background-color: #27AE60;
+    border-radius: 50%;
+}
+
+.reseauenfant h1 {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.reseauenfant p {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.section4 h1 {
+    text-align: center;
+}
+
+.section4h1title {
+    color: white;
+}
+
+.skillcontainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.skillbox {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    background-color: #212121;
+}
+
+.skillbox img {
+    width: 30px;
+    height: 30px;
+}
+
+.skillbox p {
+    color: grey;
+    margin: 0;
+}
+
+.section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 h1 {
+    text-align: center;
+}
+
+.section5h1title {
+    color: white;
+}
+
+.statskillcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212121;
+    width: 1150px;
+    height: 150px;
+}
+
+.statskill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statskill p:first-child {
+    color: #4F4F4F;
+    font-size: 50px;
+    margin: 0;
+}
+
+.statskill p:last-child {
+    color: #27AE60;
+    font-size: 25px;
+    margin: 0;
+}

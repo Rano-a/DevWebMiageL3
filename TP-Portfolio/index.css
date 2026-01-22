@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 80px;
   background-color: #171717;
   overflow-x: hidden;
 }
@@ -17,6 +18,17 @@ body {
   padding: 0px 20px;
   color: white;
   height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212121;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
 }
 
 .navbardroite {

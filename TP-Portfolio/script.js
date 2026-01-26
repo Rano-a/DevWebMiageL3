@@ -24,3 +24,21 @@ window.addEventListener("scroll", () => {
   
   lastScrollTop = scrollTop;
 });
+
+const focusBtn = document.getElementById('focus-btn');
+
+focusBtn.addEventListener('click', () => {
+    document.body.classList.toggle('focus-mode');
+
+    if (document.body.classList.contains('focus-mode')) {
+        focusBtn.innerHTML = "Stop Focus";
+        focusBtn.style.backgroundColor = "#e74c3c";
+        focusBtn.style.borderColor = "#e74c3c";
+        focusBtn.style.color = "white";
+    } else {
+        focusBtn.innerHTML = "Mode Focus";
+        focusBtn.style.backgroundColor = "transparent";
+        focusBtn.style.borderColor = "#27ae60";
+        focusBtn.style.color = "#27ae60";
+    }
+});

@@ -43,20 +43,33 @@ const yCoords = document.getElementById("posY");
 
 console.log(xCoords, yCoords);
 
-zoneSouris.addEventListener("mousemove", (event) => {
-  xCoords.textContent = `${event.clientX - zoneSouris.offsetLeft}`;
-  yCoords.textContent = `${event.clientY - zoneSouris.offsetTop}`;
-  
-  const pointeur = document.querySelector(".pointeur");
-  pointeur.style.left = `${event.clientX - 5}px`; // 5px pour centrer le pointeur
-  pointeur.style.top = `${event.clientY - 5}px`;
-});
+const header = document.querySelector("header");
+console.log(header);
 
-btn1.addEventListener("click", () => {  
+const scrollLevel = document.getElementById("scrollLevel");
+console.log(scrollLevel);
+
+btn1.addEventListener("click", () => {
   result.textContent = "JavaScript côté client 🚀";
 });
 
 divCouleur.addEventListener("click", () => {
   divCouleur.style.backgroundColor =
     colorTab[Math.floor(Math.random() * colorTab.length)];
+});
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  scrollLevel.textContent = `${scrollY}`;
+  header.style.backgroundColor =
+    colorTab[Math.floor(Math.random() * colorTab.length)];
+});
+
+zoneSouris.addEventListener("mousemove", (event) => {
+  xCoords.textContent = `${event.clientX - zoneSouris.offsetLeft}`;
+  yCoords.textContent = `${event.clientY - zoneSouris.offsetTop}`;
+
+  const pointeur = document.querySelector(".pointeur");
+  pointeur.style.left = `${event.clientX - 5}px`; // 5px pour centrer le pointeur
+  pointeur.style.top = `${event.clientY - 5}px`;
 });

@@ -79,9 +79,12 @@ window.addEventListener("scroll", () => {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  // recupérer les données
   const formData = new FormData(form);
   const nom = formData.get("nom");
   const prenom = formData.get("prenom");
+
+  // afficher le résultat
   const formResult = document.getElementById("formResult");
 
   formResult.textContent = `Bonjour ${prenom} ${nom} !`;

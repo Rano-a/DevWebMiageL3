@@ -46,6 +46,10 @@ console.log(xCoords, yCoords);
 zoneSouris.addEventListener("mousemove", (event) => {
   xCoords.textContent = `${event.clientX - zoneSouris.offsetLeft}`;
   yCoords.textContent = `${event.clientY - zoneSouris.offsetTop}`;
+  
+  const pointeur = document.querySelector(".pointeur");
+  pointeur.style.left = `${event.clientX - 5}px`; // 5px pour centrer le pointeur
+  pointeur.style.top = `${event.clientY - 5}px`;
 });
 
 btn1.addEventListener("click", () => {  

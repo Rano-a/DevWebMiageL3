@@ -35,7 +35,20 @@ const colorTab = [
   "lighttan",
 ];
 
-btn1.addEventListener("click", () => {
+const zoneSouris = document.querySelector(".mousePosition");
+console.log(zoneSouris);
+
+const xCoords = document.getElementById("posX");
+const yCoords = document.getElementById("posY");
+
+console.log(xCoords, yCoords);
+
+zoneSouris.addEventListener("mousemove", (event) => {
+  xCoords.textContent = `${event.clientX - zoneSouris.offsetLeft}`;
+  yCoords.textContent = `${event.clientY - zoneSouris.offsetTop}`;
+});
+
+btn1.addEventListener("click", () => {  
   result.textContent = "JavaScript côté client 🚀";
 });
 
